@@ -115,7 +115,7 @@ class Posit(Number):
     """
 
     def __init__(self, nsize, es, scale=1.0):
-        assert 3 >= es > 0, "invalid bits for exponent:{}".format(es)
+        assert 3 >= es >= 0, "invalid bits for exponent:{}".format(es)
         assert 16 >= nsize > 0, "invalid bits for wordlength:{}".format(nsize)
         
         self.nsize = nsize
